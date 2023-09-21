@@ -1,0 +1,56 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+.main > div {
+  margin: 0 1rem;
+}
+
+.banner {
+  object-fit: cover;
+  height: 20rem;
+  width: 100%;
+  padding: 0;
+}
+
+.selectionContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center !important; */
+  top: -2rem;
+  max-width: 40rem !important;
+  padding: 4rem !important;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.selectionContainer > div {
+  padding-bottom: 1rem;
+}
+
+.h1 {
+  padding-bottom: 2rem;
+}
+
+.stopList {
+  border-left: solid black;
+  padding: 0;
+}
+
+.listBullet {
+  font-size: 4rem;
+  position: absolute;
+  left: -0.781rem;
+  color: blue;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .selectionContainer {
+    padding: 2rem;
+  }
+}
